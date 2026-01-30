@@ -1,20 +1,70 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>ApkVault</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="center">
+/* صفحة كاملة */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 
-<div class="card">
-  <h1 class="logo">ApkVault</h1>
-  <p>اختر لغة الموقع</p>
+/* الخلفية + التوسيط */
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  <button onclick="chooseLang('ar')">العربية</button>
-  <button onclick="chooseLang('en')">English</button>
-</div>
+  background: linear-gradient(135deg, #00f5c8, #00bfa5);
+}
 
-<script src="js/main.js"></script>
-</body>
-</html>
+/* الكرت */
+.card {
+  width: 320px;
+  padding: 30px 20px;
+  text-align: center;
+
+  background: rgba(0, 60, 55, 0.85);
+  border-radius: 22px;
+
+  /* توهج ثابت */
+  box-shadow:
+    0 0 30px rgba(0, 255, 210, 0.4),
+    inset 0 0 20px rgba(0, 255, 210, 0.15);
+
+  /* ❌ إيقاف أي حركة */
+  animation: none;
+  transform: none;
+}
+
+/* العنوان */
+.logo {
+  color: #00ffe0;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+/* النص */
+.card p {
+  color: #eafffa;
+  margin-bottom: 20px;
+}
+
+/* الأزرار */
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+
+  border: none;
+  border-radius: 14px;
+
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #003cff, #00e0ff);
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
