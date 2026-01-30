@@ -1,44 +1,49 @@
-/* صفحة كاملة */
+/* reset */
+* {
+  box-sizing: border-box;
+}
+
+/* منع أي تحريك أو انزلاق */
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
-/* الخلفية + التوسيط */
-.page {
-  width: 100%;
-  height: 100%;
+/* الخلفية + توسيط حقيقي */
+body {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(135deg, #00f5c8, #00bfa5);
+  background: linear-gradient(135deg, #00f5c8, #009e8a);
 }
 
 /* الكرت */
 .card {
   width: 320px;
+  max-width: 90%;
+
   padding: 30px 20px;
   text-align: center;
 
-  background: rgba(0, 60, 55, 0.85);
+  background: rgba(0, 60, 55, 0.88);
   border-radius: 22px;
 
-  /* توهج ثابت */
   box-shadow:
-    0 0 30px rgba(0, 255, 210, 0.4),
+    0 0 35px rgba(0, 255, 210, 0.45),
     inset 0 0 20px rgba(0, 255, 210, 0.15);
 
-  /* ❌ إيقاف أي حركة */
-  animation: none;
+  /* تثبيت نهائي */
+  position: relative;
   transform: none;
 }
 
 /* العنوان */
 .logo {
   color: #00ffe0;
-  font-size: 34px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 
@@ -59,12 +64,9 @@ button {
 
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
 
   background: linear-gradient(90deg, #003cff, #00e0ff);
   color: white;
-}
 
-button:hover {
-  opacity: 0.9;
+  cursor: pointer;
 }
