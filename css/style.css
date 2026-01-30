@@ -1,72 +1,72 @@
-/* reset */
 * {
-  box-sizing: border-box;
-}
-
-/* منع أي تحريك أو انزلاق */
-html, body {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* الخلفية + توسيط حقيقي */
 body {
+  background: #ffffff;
+  color: #000;
+}
+
+/* الشريط العلوي */
+.top-bar {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.top-bar h2 {
+  color: #1e40ff;
+}
+
+/* المحتوى */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.content h1 {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.content h1 span {
+  color: #1e40ff;
+}
+
+/* قائمة الدايموند */
+.diamond-list {
+  max-width: 400px;
+  margin: auto;
+}
+
+.diamond-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  background: linear-gradient(135deg, #00f5c8, #009e8a);
+  margin-bottom: 15px;
 }
 
-/* الكرت */
-.card {
-  width: 320px;
-  max-width: 90%;
-
-  padding: 30px 20px;
-  text-align: center;
-
-  background: rgba(0, 60, 55, 0.88);
-  border-radius: 22px;
-
-  box-shadow:
-    0 0 35px rgba(0, 255, 210, 0.45),
-    inset 0 0 20px rgba(0, 255, 210, 0.15);
-
-  /* تثبيت نهائي */
-  position: relative;
-  transform: none;
-}
-
-/* العنوان */
-.logo {
-  color: #00ffe0;
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-/* النص */
-.card p {
-  color: #eafffa;
-  margin-bottom: 20px;
-}
-
-/* الأزرار */
-button {
-  width: 100%;
-  padding: 14px;
-  margin: 8px 0;
-
-  border: none;
-  border-radius: 14px;
-
-  font-size: 16px;
+/* كلمة FREE */
+.free {
+  width: 70px;
   font-weight: bold;
+  color: #1e40ff;
+}
 
-  background: linear-gradient(90deg, #003cff, #00e0ff);
-  color: white;
-
+/* الزر */
+.diamond-item button {
+  flex: 1;
+  background: #f1d400;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
+}
+
+.diamond-item button:hover {
+  background: #e0c200;
 }
