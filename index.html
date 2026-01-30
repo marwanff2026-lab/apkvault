@@ -1,52 +1,115 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Free Diamonds</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <title>ApkVault</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #00e6c3, #00796b);
+    }
+
+    /* ===== Toolbar ===== */
+    .toolbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 55px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+
+    .tool-btn {
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .tool-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* ===== Center Box ===== */
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 55px;
+    }
+
+    .box {
+      background: #0f3d36;
+      padding: 25px;
+      width: 280px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    }
+
+    .box h1 {
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      color: #cfcfcf;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #fff;
+      background: linear-gradient(90deg, #0047ff, #00c6ff);
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
 </head>
+
 <body>
 
-  <header class="top-bar">
-    <h2>مدونة ApkVault</h2>
-  </header>
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <div class="tool-btn">☰</div>
+    <div class="tool-title">ApkVault</div>
+    <div class="tool-btn">🔍</div>
+  </div>
 
-  <main class="content">
-    <h1>GET <span>FREE</span> DIAMONDS</h1>
+  <!-- Center Content -->
+  <div class="container">
+    <div class="box">
+      <h1>ApkVault</h1>
+      <p>اختر لغة الموقع</p>
 
-    <div class="diamond-list">
-
-      <div class="diamond-item">
-        <span class="free">FREE</span>
-        <button>
-          💎 1,000
-        </button>
-      </div>
-
-      <div class="diamond-item">
-        <span class="free">FREE</span>
-        <button>
-          💎 2,000
-        </button>
-      </div>
-
-      <div class="diamond-item">
-        <span class="free">FREE</span>
-        <button>
-          💎 5,500
-        </button>
-      </div>
-
-      <div class="diamond-item">
-        <span class="free">FREE</span>
-        <button>
-          💎 9,000
-        </button>
-      </div>
-
+      <button class="btn">العربية</button>
+      <button class="btn">English</button>
     </div>
-  </main>
+  </div>
 
 </body>
 </html>
