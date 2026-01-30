@@ -1,48 +1,20 @@
-@font-face {
-  font-family: MAXVIEW;
-  src: url("../fonts/MAXVIEW.ttf");
-}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>ApkVault</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
 
-body {
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(135deg,#00ffd5,#001f2f);
-  font-family: Arial;
-  color: white;
-}
+<div class="card">
+  <h1 class="logo">ApkVault</h1>
+  <p>اختر لغة الموقع</p>
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  <button onclick="chooseLang('ar')">العربية</button>
+  <button onclick="chooseLang('en')">English</button>
+</div>
 
-.card {
-  background: rgba(0,0,0,0.5);
-  padding: 30px;
-  width: 90%;
-  max-width: 350px;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 0 25px cyan;
-}
-
-.logo {
-  font-family: MAXVIEW;
-  font-size: 36px;
-  color: cyan;
-  text-shadow: 0 0 15px cyan;
-}
-
-input, button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: none;
-}
-
-button {
-  background: linear-gradient(90deg,#00f,#0ff);
-  font-weight: bold;
-}
+<script src="js/main.js"></script>
+</body>
+</html>
